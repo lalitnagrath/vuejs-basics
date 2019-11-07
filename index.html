@@ -1,1 +1,25 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+    <p id="app">
+        {{message}}
+    </p>
+    
+    <script>
+         var app = new Vue({
+            el: '#app',
+            data:{
+                message:'Welcome to Vue.js'
+            }
+        });
+    </script>
+</body>
+</html>

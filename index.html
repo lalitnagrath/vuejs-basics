@@ -6,20 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vue JS</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-</head>
+
+    </head>
 <body>
 
-    <p id="app">
-        {{message}}
-    </p>
+    <div id="newapp" >
     
-    <script>
-         var app = new Vue({
-            el: '#app',
-            data:{
-                message:'Welcome to Vue.js'
-            }
-        });
-    </script>
+    <input type="text" placeholder="enter name" v-model="name">
+    <input type="text" placeholder="enter email" v-model="email">
+<br> <h4>name and email {{fullname}}</h4>
+</div>
+
+    <script src="video3.js"></script>
+
 </body>
 </html>

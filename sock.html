@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Welcome to Vue JS!!</title>
+</head>
+<body>
+    <div class="nav-bar">
+
+    </div>
+    <div id="app">
+        <div class="product">
+            <div class="product-image">
+                <img v-bind:src="image" height="200px" alt="">
+            </div>
+            <p v-if="instock">in stock</p>
+            <p v-else>Out of stock</p>
+
+            <div class="product-info">
+                    {{product}}<br>
+
+            </div>
+
+            <h1>description of our Product</h1>
+            {{description}}
+            <a :href="link">Read more</a>
+        </div>
+            </div>
+    
+
+        <script src="sock.js"></script>
+
+</body>
+</html>

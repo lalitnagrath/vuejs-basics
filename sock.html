@@ -16,20 +16,17 @@
             <div class="product-image">
                 <img v-bind:src="image" height="200px" alt="">
             </div>
-            <p v-if="instock">in stock</p>
-            <p v-else>Out of stock</p>
-
+    <p v-if="inventory>10">IN Stock</p> 
+    <p v-else-if="inventory<10 && inventory>0">Almost out of Stock</p>            
+    <p v-else="inventory">out of Stock</p>
             <div class="product-info">
                     {{product}}<br>
-
             </div>
-
-            <h1>description of our Product</h1>
+            <h1>Description of our Product</h1>
             {{description}}
             <a :href="link">Read more</a>
         </div>
-            </div>
-    
+            </div>  
 
         <script src="sock.js"></script>
 

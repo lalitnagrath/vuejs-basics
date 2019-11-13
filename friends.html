@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+<body>
+    <div id="newapp" >
+        <input  v-model="x">
+        <p> type 1 for school friends and 2 for college friends</h3>
+ <h4 v-if="x==1">School   Friends:- {{school}}</h4>
+<h4 v-else-if="x==2">College friends:{{college}}</h4>
+<h4 v-else>INVALID INPUT</h4>
+
+Choosen Input:{{x}}
+
+</div>
+<script>
+  var xyz=  new Vue({
+        el:'#newapp',
+        data:{
+            school:'harsh,Puneet',
+            college:'shivinder,kunal',
+            x:1 
+        }
+    });
+
+</script></body>
+</html>
